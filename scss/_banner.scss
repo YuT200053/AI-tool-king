@@ -1,0 +1,28 @@
+.banner {
+  &-content {
+    max-width: 960px;
+    font-size: $font-banner;
+    color: $white;
+    font-weight: $font-w-l;
+    line-height: $line-height-m;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+  &-animation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    &-content {
+      font-size: $font-xl;
+      max-width: 252px;
+    }
+    button {
+      margin-bottom: 180px;
+    }
+  }
+}

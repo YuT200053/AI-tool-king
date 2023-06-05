@@ -1,0 +1,218 @@
+.tools {
+  background-color: $white;
+  max-width: 1920px;
+  height: auto;
+  border-radius: 160px;
+  padding: 160px 0 162px 0;
+  &-container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+  &-title {
+    font-size: $font-xxl;
+    font-weight: $font-w-l;
+    line-height: $line-height-m;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &-search {
+    margin-bottom: 24px;
+    position: relative;
+    input {
+      padding: 20px 76px;
+      background-color: $lightgray2;
+      outline: none;
+      border: none;
+      border-radius: 16px;
+      color: $gray;
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      left: 40px;
+      top: 20px;
+      font-size: 17.5px;
+      color: $gray;
+    }
+  }
+  &-select {
+    position: relative;
+    max-width: 1296px;
+    height: auto;
+    .button2 {
+      background-color: $white;
+      color: $black;
+      font-weight: $font-w-s;
+      font-size: $font-m;
+      border: 1px solid $lightgray2;
+      display: flex;
+      align-items: center;
+    }
+    .box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .material-icons {
+      box-sizing: border-box;
+      margin-left: 12px;
+      font-size: $font-m;
+    }
+  }
+  button {
+    padding: 20px 32px 20px 40px;
+  }
+  &-option {
+    border-radius: 16px;
+    padding: 20px 60px 20px 40px;
+    outline: none;
+    line-height: $line-height-m;
+    appearance: none; //清除原本樣式
+    background: url("../img/expand_more.png") no-repeat scroll right 32px center
+      transparent;
+    background-size: 16px;
+    cursor: pointer;
+  }
+  &-theme {
+    height: 45px;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    li {
+      display: list-item;
+      height: 40px;
+      width: auto;
+      margin: 0 8px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    a {
+      height: 40px;
+      padding: 8px 16px;
+      display: block;
+      flex-wrap: wrap;
+    }
+    li:hover a {
+      color: $gray2;
+      font-weight: $font-w-m;
+      @include zoom(0.2s);
+    }
+    a {
+      color: $gray;
+      display: block;
+    }
+    .click {
+      background-color: $lightgray2;
+      border-radius: 16px;
+      color: $black;
+      font-weight: $font-w-m;
+    }
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 416px;
+    // max-height: 558px;
+    border-radius: 16px;
+    border: 1px solid $lightgray2;
+    margin: 0 auto 12px auto;
+    &-img {
+      max-height: 312px;
+      overflow: hidden;
+      border-radius: 16px 16px 0 0;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      @include zoom(0.3s);
+    }
+    &-info {
+      padding: 20px 32px;
+      flex-grow: 1;
+    }
+    &-model,
+    &-tag {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 32px;
+      border-top: 1px solid $lightgray2;
+    }
+    &-tag a:hover span {
+      color: $gray2;
+      @include zoom(0.2s);
+      cursor: pointer;
+    }
+  }
+  &-card:hover img {
+    transform: scale(1.2);
+    object-fit: cover;
+  }
+  &-page {
+    display: flex;
+    justify-content: end;
+    a {
+      width: 48px;
+      height: 48px;
+      margin: 0 2px;
+      border-radius: 16px;
+      font-size: $font-s;
+      font-weight: $font-w-m;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a:hover {
+      @include zoom(0.2s);
+      background-color: $black;
+      color: $white;
+    }
+    &-a {
+      background-color: $black;
+      color: $white;
+    }
+    .material-icons {
+      font-size: $font-m;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .tools {
+    padding: 80px 12px;
+    border-radius: 20px;
+    &-title {
+      font-size: $font-title;
+      margin-bottom: 32px;
+    }
+    &-select {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 48px;
+      // height: 140px;
+    }
+    &-theme {
+      margin-top: 16px;
+      margin-bottom: 48px;
+      width: 100%;
+      top: 80%;
+    }
+    &-theme::-webkit-scrollbar {
+      display: none;
+    }
+    &-card {
+      margin-bottom: 12px;
+    }
+    &-page {
+      justify-content: center;
+    }
+  }
+}

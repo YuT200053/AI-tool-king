@@ -1,0 +1,37 @@
+//color
+$bg-color: #000;
+$black: #020202;
+$gray: #919191;
+$gray2: #525252;
+$white: #fff;
+$darkgray: #202020;
+$lightgray: #e0e0e0;
+$lightgray2: #f2f2f2;
+
+//font-family
+$font-family: "Noto Sans TC", sans-serif;
+
+//font-size
+$font-title: 32px;
+$font-banner: 120px;
+$font-xxl: 80px;
+$font-xl: 48px;
+$font-l: 20px;
+$font-m: 16px;
+$font-s: 14px;
+
+//line-height
+$line-height-l: 1.5;
+$line-height-m: 1.2;
+
+//font-weight
+$font-w-l: 900;
+$font-w-m: 700;
+$font-w-s: 400;
+//padding
+$button-padding: 20px 40px;
+
+//hover
+@mixin zoom($time) {
+  transition: $time ease-in-out;
+}

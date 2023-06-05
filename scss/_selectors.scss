@@ -1,0 +1,119 @@
+// 全站設定
+body {
+  background-color: #000;
+  font-size: $font-m;
+  line-height: $line-height-l;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+h2 {
+  font-size: $font-title;
+  font-weight: $font-w-l;
+  line-height: $line-height-m;
+  color: $white;
+}
+@media (max-width: 767px) {
+  section {
+    h2 {
+      font-size: $font-l;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+h3 {
+  font-size: $font-l;
+  font-weight: $font-w-l;
+  line-height: $line-height-m;
+  color: $black;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: $font-s;
+  font-weight: $font-w-s;
+  line-height: $line-height-l;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  display: block;
+  font-size: $font-l;
+  font-weight: $font-w-l;
+  line-height: $line-height-m;
+  color: $white;
+  padding: $button-padding;
+  border: 1px $white solid;
+  border-radius: 16px;
+  background-color: $bg-color;
+  @include zoom(0.2s);
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $black;
+  }
+}
+
+section {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  section {
+    max-width: 351px;
+  }
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.section-mb {
+  margin-bottom: 160px;
+}
+@media (max-width: 767px) {
+  .section-mb {
+    margin-bottom: 120px;
+  }
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.fw-700 {
+  font-weight: $font-w-m;
+}
+
+//滾輪設定
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: $gray;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $darkgray;
+  border-radius: 10px;
+}
