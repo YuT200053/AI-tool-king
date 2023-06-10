@@ -1,4 +1,5 @@
 .service {
+  padding: 0 15px;
   &-title {
     display: flex;
     justify-content: space-between;
@@ -44,6 +45,7 @@
 
 @media (max-width: 767px) {
   .service {
+    padding: 0 12px;
     &-title {
       flex-direction: column;
       margin-bottom: 48px;

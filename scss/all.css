@@ -183,13 +183,11 @@ button:hover {
 section {
   max-width: 1326px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 @media (max-width: 767px) {
   section {
     max-width: 375px;
-    padding: 0 12px;
   }
 }
 .mb-20 {
@@ -244,6 +242,7 @@ section {
   border-bottom: 1px solid #fff;
   margin-bottom: 40px;
   position: relative;
+  padding: 0 15px;
 }
 .header-logo {
   display: flex;
@@ -290,6 +289,9 @@ section {
 }
 
 @media (max-width: 767px) {
+  .header {
+    padding: 0 12px;
+  }
   .header-logo a {
     width: 147px;
     height: 24px;
@@ -301,6 +303,9 @@ section {
   .header .showmenu {
     display: block;
   }
+}
+.banner {
+  padding: 0 15px;
 }
 .banner-content {
   max-width: 960px;
@@ -318,6 +323,9 @@ section {
 }
 
 @media (max-width: 767px) {
+  .banner {
+    padding: 0 12px;
+  }
   .banner-content {
     font-size: 48px;
     max-width: 252px;
@@ -325,6 +333,9 @@ section {
   .banner button {
     margin-bottom: 180px;
   }
+}
+.service {
+  padding: 0 15px;
 }
 .service-title {
   display: flex;
@@ -369,6 +380,9 @@ section {
 }
 
 @media (max-width: 767px) {
+  .service {
+    padding: 0 12px;
+  }
   .service-title {
     flex-direction: column;
     margin-bottom: 48px;
@@ -387,6 +401,9 @@ section {
     margin-bottom: 12px;
     padding: 40px 20px;
   }
+}
+.partner {
+  padding: 0 15px;
 }
 .partner h2 {
   margin-bottom: 80px;
@@ -501,6 +518,9 @@ section {
 }
 
 @media (max-width: 767px) {
+  .partner {
+    padding: 0 12px;
+  }
   .partner h2 {
     font-size: 24px;
     margin-bottom: 24px;
@@ -790,6 +810,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
 }
 .action-title {
   font-size: 48px;
@@ -809,12 +830,18 @@ section {
 }
 
 @media (max-width: 767px) {
+  .action {
+    padding: 0 12px;
+  }
   .action-title {
     font-size: 32px;
     margin-top: 40px;
     flex-direction: column;
     text-align: center;
   }
+}
+.footer {
+  padding: 0 15px;
 }
 .footer-content {
   padding: 80px 0;
@@ -865,6 +892,9 @@ section {
 }
 
 @media (max-width: 767px) {
+  .footer {
+    padding: 0 12px;
+  }
   .footer-content {
     flex-direction: column-reverse;
   }

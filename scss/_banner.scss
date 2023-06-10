@@ -1,4 +1,5 @@
 .banner {
+  padding: 0 15px;
   &-content {
     max-width: 960px;
     font-size: $font-banner;
@@ -17,6 +18,7 @@
 
 @media (max-width: 767px) {
   .banner {
+    padding: 0 12px;
     &-content {
       font-size: $font-xl;
       max-width: 252px;

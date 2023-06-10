@@ -1,4 +1,5 @@
 .partner {
+  padding: 0 15px;
   h2 {
     margin-bottom: 80px;
     font-size: $font-title;
@@ -128,6 +129,7 @@
 
 @media (max-width: 767px) {
   .partner {
+    padding: 0 12px;
     h2 {
       font-size: 24px;
       margin-bottom: 24px;
