@@ -9,17 +9,19 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="scss/all.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500&amp;display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="scss/all.css" />
   </head>
   <body>
     <!-- header -->
     <section class="header">
       <div class="header-logo">
-        <a href="#"><img src="img/logo.png" alt="AI工具王" /></a>
+        <h1>
+          <a href="index.html">AI 工具王</a>
+        </h1>
       </div>
       <a class="material-icons showmenu"> menu </a>
       <div class="header-list">
@@ -34,7 +36,7 @@
       <div class="banner-content">
         透過<br />AI 工具王的<br />強大模型<br />讓您的業務更聰明
       </div>
-      <button>開始使用</button>
+      <button type="button" type="button">開始使用</button>
       <div class="banner-animation">
         <span><img src="img/deco.png" alt="banner-animation" /></span
         ><span><img src="img/deco.png" alt="banner-animation" /></span
@@ -193,7 +195,7 @@
         </div>
         <div class="tools-select">
           <div class="box">
-            <button class="tools-btn button2">
+            <button type="button" class="tools-btn button2">
               <span>篩選</span><span class="material-icons"> filter_alt </span>
             </button>
             <select name="" id="" class="tools-option button2">
@@ -203,13 +205,15 @@
             </select>
           </div>
           <ul class="tools-theme" id="test">
-            <li class="click"><a href="#test" class="click">全部</a></li>
-            <li><a href="#test">聊天</a></li>
-            <li><a href="#test">影像辨識</a></li>
-            <li><a href="#test">翻譯</a></li>
-            <li><a href="#test">行銷</a></li>
-            <li><a href="#test">客服</a></li>
-            <li><a href="#test">生產力</a></li>
+            <li class="click">
+              <button type="button" class="click">全部</button>
+            </li>
+            <li><button type="button">聊天</button></li>
+            <li><button type="button">影像辨識</button></li>
+            <li><button type="button">翻譯</button></li>
+            <li><button type="button">行銷</button></li>
+            <li><button type="button">客服</button></li>
+            <li><button type="button">生產力</button></li>
           </ul>
         </div>
         <ul class="tools-list mb-40">
@@ -317,12 +321,12 @@
           </li>
         </ul>
         <div class="tools-page">
-          <a href="#" class="tools-page-a">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#" class="material-icons"> navigate_next </a>
+          <button type="button" class="click">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">4</button>
+          <button type="button">5</button>
+          <button type="button" class="material-icons">navigate_next</button>
         </div>
       </div>
     </section>
@@ -331,7 +335,7 @@
       <div class="action-title mb-40">
         <span>現在就來建立</span>屬於你的服務吧<span></span>
       </div>
-      <button class="action-btn">
+      <button type="button" class="action-btn">
         開始使用<span class="material-icons"> north_east </span>
       </button>
     </section>
@@ -342,7 +346,7 @@
           <li><a href="#">首頁</a></li>
           <li><a href="#">定價</a></li>
         </ul>
-        <a href="#" class="footer-logo"
+        <a href="index.html" class="footer-logo"
           ><img src="img/logo.png" alt="logo"
         /></a>
       </div>

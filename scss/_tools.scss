@@ -7,6 +7,7 @@
   &-container {
     max-width: 1296px;
     margin: 0 auto;
+    padding: 0 15px;
   }
   &-title {
     font-size: $font-xxl;
@@ -90,20 +91,22 @@
       cursor: pointer;
       flex-shrink: 0;
     }
-    a {
+    button {
+      font-size: $font-m;
+      font-weight: $font-w-s;
       height: 40px;
       padding: 8px 16px;
       display: block;
       flex-wrap: wrap;
+      color: $gray;
+      display: block;
+      background-color: #fff;
+      margin-bottom: 100px;
     }
-    li:hover a {
+    li:hover button {
       color: $gray2;
       font-weight: $font-w-m;
       @include zoom(0.2s);
-    }
-    a {
-      color: $gray;
-      display: block;
     }
     .click {
       background-color: $lightgray2;
@@ -140,6 +143,16 @@
       padding: 20px 32px;
       flex-grow: 1;
     }
+    &-info h3 {
+      font-size: $font-l;
+      font-weight: $font-w-l;
+      line-height: $line-height-m;
+      color: $black;
+      margin-bottom: 12px;
+    }
+    p {
+      color: $gray2;
+    }
     &-model,
     &-tag {
       display: flex;
@@ -160,7 +173,7 @@
   &-page {
     display: flex;
     justify-content: end;
-    a {
+    button {
       width: 48px;
       height: 48px;
       margin: 0 2px;
@@ -170,13 +183,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 0;
+      background-color: $white;
+      color: $black;
     }
-    a:hover {
+    button:hover {
       @include zoom(0.2s);
       background-color: $black;
       color: $white;
     }
-    &-a {
+    .click {
       background-color: $black;
       color: $white;
     }
@@ -197,7 +213,6 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 48px;
-      // height: 140px;
     }
     &-theme {
       margin-top: 16px;

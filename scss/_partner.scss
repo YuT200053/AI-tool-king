@@ -1,6 +1,10 @@
 .partner {
   h2 {
     margin-bottom: 80px;
+    font-size: $font-title;
+    font-weight: $font-w-l;
+    line-height: $line-height-m;
+    color: $white;
   }
   ul {
     display: flex;
@@ -125,6 +129,8 @@
 @media (max-width: 767px) {
   .partner {
     h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
       margin-bottom: 24px;
     }
     &-logo {

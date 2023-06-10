@@ -2,6 +2,7 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid $white;
   margin-bottom: 40px;
   position: relative;
@@ -9,8 +10,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    img {
+    a {
+      display: block;
+      width: 245px;
       height: 40px;
+      background-image: url(../img/logo.png);
+      background-size: cover;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
   &-list {
@@ -39,14 +47,14 @@
   .showmenu {
     position: absolute;
     right: 8px;
-    top: 28px;
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   .header {
-    &-logo img {
+    &-logo a {
+      width: 147px;
       height: 24px;
     }
     &-list ul {
@@ -54,7 +62,7 @@
       display: none;
     }
     .showmenu {
-      visibility: visible;
+      display: block;
     }
   }
 }

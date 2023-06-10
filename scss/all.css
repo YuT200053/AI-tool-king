@@ -146,27 +146,6 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-h2 {
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 1.2;
-  color: #fff;
-}
-
-@media (max-width: 767px) {
-  section h2 {
-    font-size: 20px;
-    margin-bottom: 24px;
-  }
-}
-h3 {
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 1.2;
-  color: #020202;
-  margin-bottom: 12px;
-}
-
 p {
   font-size: 14px;
   font-weight: 400;
@@ -202,13 +181,15 @@ button:hover {
 }
 
 section {
-  max-width: 1296px;
+  max-width: 1326px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @media (max-width: 767px) {
   section {
-    max-width: 351px;
+    max-width: 375px;
+    padding: 0 12px;
   }
 }
 .mb-20 {
@@ -259,6 +240,7 @@ section {
   height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #fff;
   margin-bottom: 40px;
   position: relative;
@@ -268,8 +250,15 @@ section {
   justify-content: center;
   align-items: center;
 }
-.header-logo img {
+.header-logo a {
+  display: block;
+  width: 245px;
   height: 40px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .header-list {
   display: flex;
@@ -297,12 +286,12 @@ section {
 .header .showmenu {
   position: absolute;
   right: 8px;
-  top: 28px;
-  visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 767px) {
-  .header-logo img {
+  .header-logo a {
+    width: 147px;
     height: 24px;
   }
   .header-list ul {
@@ -310,7 +299,7 @@ section {
     display: none;
   }
   .header .showmenu {
-    visibility: visible;
+    display: block;
   }
 }
 .banner-content {
@@ -342,12 +331,19 @@ section {
   justify-content: space-between;
   margin-bottom: 80px;
 }
+.service h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  flex: 1;
+}
 .service-content {
-  max-width: 856px;
   font-size: 48px;
   font-weight: 900;
   line-height: 1.2;
   color: #fff;
+  flex: 2;
 }
 .service-list {
   display: flex;
@@ -362,10 +358,6 @@ section {
 }
 .service-list-h2 {
   margin-bottom: 20px;
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 1.2;
-  color: #fff;
 }
 .service-list p {
   color: #f2f2f2;
@@ -381,6 +373,10 @@ section {
     flex-direction: column;
     margin-bottom: 48px;
   }
+  .service-title h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
   .service-content {
     font-size: 32px;
   }
@@ -394,6 +390,10 @@ section {
 }
 .partner h2 {
   margin-bottom: 80px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
 }
 .partner ul {
   display: flex;
@@ -502,6 +502,8 @@ section {
 
 @media (max-width: 767px) {
   .partner h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
     margin-bottom: 24px;
   }
   .partner-logo {
@@ -560,6 +562,7 @@ section {
 .tools-container {
   max-width: 1296px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .tools-title {
   font-size: 80px;
@@ -645,20 +648,22 @@ section {
   cursor: pointer;
   flex-shrink: 0;
 }
-.tools-theme a {
+.tools-theme button {
+  font-size: 16px;
+  font-weight: 400;
   height: 40px;
   padding: 8px 16px;
   display: block;
   flex-wrap: wrap;
+  color: #919191;
+  display: block;
+  background-color: #fff;
+  margin-bottom: 100px;
 }
-.tools-theme li:hover a {
+.tools-theme li:hover button {
   color: #525252;
   font-weight: 700;
   transition: 0.2s ease-in-out;
-}
-.tools-theme a {
-  color: #919191;
-  display: block;
 }
 .tools-theme .click {
   background-color: #f2f2f2;
@@ -694,6 +699,16 @@ section {
   padding: 20px 32px;
   flex-grow: 1;
 }
+.tools-card-info h3 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #020202;
+  margin-bottom: 12px;
+}
+.tools-card p {
+  color: #525252;
+}
 .tools-card-model, .tools-card-tag {
   display: flex;
   justify-content: space-between;
@@ -714,7 +729,7 @@ section {
   display: flex;
   justify-content: end;
 }
-.tools-page a {
+.tools-page button {
   width: 48px;
   height: 48px;
   margin: 0 2px;
@@ -724,13 +739,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  background-color: #fff;
+  color: #020202;
 }
-.tools-page a:hover {
+.tools-page button:hover {
   transition: 0.2s ease-in-out;
   background-color: #020202;
   color: #fff;
 }
-.tools-page-a {
+.tools-page .click {
   background-color: #020202;
   color: #fff;
 }
